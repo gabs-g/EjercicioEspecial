@@ -8,7 +8,7 @@ botonClic.addEventListener('click', function(event){
 
     function getData(information){
         const options = {method: "GET"};
-        fetch(URLMain + options)
+        fetch(URLMain, options)
             .then((response) => {
                 response.json().then((res)=>{
                     //console.log(res.length);
@@ -32,7 +32,7 @@ botonClic.addEventListener('click', function(event){
         productos.forEach(producto => {
         tarjetas.insertAdjacentHTML("beforeend",
             `<div class="card"  style="width: 18rem;">
-                <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
+                <img src="${producto.images[0]}" class="card-img-top" alt="${producto.title}">
                 <div class="card-body">
                     <h5 class="card-title">${producto.title}</h5>
                     <p class="card-text">${producto.description}</p>
@@ -43,3 +43,7 @@ botonClic.addEventListener('click', function(event){
     
     });
     }
+
+    getData ();
+
+});
