@@ -1,5 +1,6 @@
 # Ejercicio Evaluado Especial
 
-Ejercicio Evaluado Especial
-
-Favor de leer los pasos a seguir en el archivo Instrucciones.md
+* Número de Cohorte: CH53
+* Fecha: 30 abril
+* Hora: 9:50
+* Nombre: Ana Gabriela García García
